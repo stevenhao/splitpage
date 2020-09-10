@@ -28,21 +28,20 @@ document.getElementById("app").innerHTML = `
 }
 .controls span input {
   flex: 1;
-  margin-left: 40px;
+  margin: 20px;
 }
 .controls:hover {
   opacity: 1;
   transition: .5s all;
 }
 .content {
-  margin-top: 40px;
   display: flex;
 
   flex: 1;
 }
 .content iframe {
   flex: 1;
-  margin-left: 40px;
+  margin: 20px;
 }
 html, body, #app {
   height: 100%;
