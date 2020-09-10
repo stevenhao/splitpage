@@ -1,7 +1,7 @@
 const qs = window.querystringify;
 let state = {
-  left: "https://www.youtube.com/embed/iqONualxFH8",
-  right: "https://www.youtube.com/embed/iqONualxFH8",
+  left: "https://www.youtube.com/embed/5qap5aO4i9A",
+  right: "https://en.wikipedia.org/wiki/Lo-fi_music",
   ...qs.parse(window.location.search)
 };
 
