@@ -1,7 +1,9 @@
 const qs = window.querystringify;
+const others = ['<iframe width="1280" height="720" src="https://www.youtube.com/embed/74xCG9U4XFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'];
 let state = {
-  left: "https://www.youtube.com/embed/5qap5aO4i9A",
-  right: "https://en.wikipedia.org/wiki/Lo-fi_music",
+  left: "https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1",
+  right: 'https://www.youtube.com/embed/74xCG9U4XFc?autoplay=1',
+   others: ['https://www.youtube.com/embed/74xCG9U4XFc',],
   ...qs.parse(window.location.search)
 };
 
