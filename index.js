@@ -67,7 +67,9 @@ const setState = (stateUpdate) => {
   };
   window.history.replaceState({}, "", "?" + qs.stringify(state));
   for (const el of qq("iframe")) {
-    el.src = state[el.getAttribute("data-id")];
+     if (el.src !== state[el.getAttribute("data-id")]) {
+       el.src = state[el.getAttribute("data-id")];
+     }
   }
   for (const el of qq("input")) {
     el.value = state[el.id];
